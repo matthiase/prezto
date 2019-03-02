@@ -16,3 +16,6 @@ if (( $+commands[nvim] )); then
 else
   alias vim='() { $(whence -p vim) $@ }'
 fi
+
+# Source file containing local customizations
+[[ -f ~/.zshlocal ]] && source ~/.zshlocal
